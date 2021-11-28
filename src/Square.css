@@ -1,0 +1,32 @@
+#root {
+  display: flex;
+  flex-direction: column;
+}
+.big-square{
+  width: 350px;
+  height: 350px;
+  font-size: 20px;
+}
+.middle-square{
+  width: 250px;
+  height: 250px;
+  font-size: 18px;
+
+}
+.small-square{
+  width: 150px;
+  height: 150px;
+  font-size: 16px;
+
+}
+.big-square,
+.middle-square,
+.small-square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  font-weight: 700;
+  background-color: cyan;
+  border: 2px solid #000;
+}

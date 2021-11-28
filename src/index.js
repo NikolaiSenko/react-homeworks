@@ -1,16 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Test from "./Test";
-import Text from "./Text";
+import Square from "./Square"
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Text text="Regular text" size={16} color="grey" />
-    <Text text="Huge header" size={20} color="black"/>
-    <Text text="Danger notification" size={12} color="red" />
-    <Text text="Underlined text" size={18} color="black" underline />
+    <Square cssClass ='big-square' label={<p>A BIG square</p>} />
+    <Square cssClass ='middle-square' label={<p>A less square</p>} />
+    <Square cssClass ='small-square' label={<p>The smallest one</p>} />
   </React.StrictMode>,
   document.getElementById("root")
 );
