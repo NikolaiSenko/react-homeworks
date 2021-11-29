@@ -1,4 +1,4 @@
-import "./Square.css";
+import "./styles.css";
 
 const Square= ({cssClass, label }) => {
   return (
