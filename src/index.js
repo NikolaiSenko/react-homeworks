@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Square from "./Square"
+import UserList from "./extra_task/UserList"
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Square cssClass ='big-square' label={<p>A BIG square</p>} />
-    <Square cssClass ='middle-square' label={<p>A less square</p>} />
-    <Square cssClass ='small-square' label={<p>The smallest one</p>} />
+    <UserList listItem='list-item' listContainer='list-container'/>
   </React.StrictMode>,
   document.getElementById("root")
 );
