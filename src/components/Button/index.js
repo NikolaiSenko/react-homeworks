@@ -1,22 +1,15 @@
 import React, {useState} from "react"
-
+const array = ['No-repeat', 'Repeat All', 'Repeat one'];
 const Button = ()=>{
-  const [button,setButton] = useState('No-repeat');
+  const [index,setIndex] = useState(0);
   const onButton = ()=> {
-    switch(button){
-      default:
-        setButton('No-repeat')
-        break;
-      case 'No-repeat':
-        setButton('Repeat All')
-        break;
-        case 'Repeat All':
-          setButton('Repeat one')
-          break;
-    }  
+    if (index === array.length - 1){
+      setIndex(0)
+    } else {
+      setIndex(index + 1);
+    }
   }
-
   return(
-<button onClick={onButton}>{button}</button>)
+<button onClick={onButton}>{array[index]}</button>)
 }
 export default Button;
