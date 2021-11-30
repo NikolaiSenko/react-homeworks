@@ -1,0 +1,12 @@
+.wrapper {
+  width: 50%;
+  margin: 10px auto;
+}
+.btn{
+  margin: 10px;
+  padding: 10px;
+}
+span{
+  font-size: 25px;
+  font-weight: 700;
+}
