@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Button from "./components/Button"
+import Conditional from './components/Conditional'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Button/>
+    <Conditional/>
   </React.StrictMode>,
   document.getElementById("root")
 );
