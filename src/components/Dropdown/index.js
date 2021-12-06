@@ -5,7 +5,7 @@ const Dropdown = () => {
   const [prove, setProve] = useState(false)
   const element = INGREDIENTS.map((ing) =>{
     return(
-    <p>{ing}</p>
+    <p key={ing}>{ing}</p>
     )
   })
   return (
