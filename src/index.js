@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-
-import UserList from "./extra_task/UserList"
+import Posts from "./components/Posts"
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserList listItem='list-item' listContainer='list-container'/>
+    <Posts/>
   </React.StrictMode>,
   document.getElementById("root")
 );
