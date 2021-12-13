@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Posts from "./components/Posts"
+import Dropdown from "./components/Dropdown";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Posts/>
+    <Dropdown/>
   </React.StrictMode>,
   document.getElementById("root")
 );
-
