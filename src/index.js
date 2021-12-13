@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Dropdown from "./components/Dropdown";
+import Pagination from "./components/Pagination";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dropdown/>
+    <Pagination/>
   </React.StrictMode>,
   document.getElementById("root")
 );
