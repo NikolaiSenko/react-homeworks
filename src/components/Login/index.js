@@ -11,8 +11,7 @@ const Login = () => {
   };
   return (
     <div>
-      {!isSignedIn && <button onClick={onButton}>Sign in</button>}
-      { isSignedIn && <p onClick={onButton}>Hello user!</p>}
+      {isSignedIn ? <p onClick={onButton}>Hello user!</p> :<button onClick={onButton}>Sign in</button>}
     </div>
   );
 };
