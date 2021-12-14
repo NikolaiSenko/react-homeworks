@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Posts = () => {
   
@@ -9,7 +10,7 @@ const Posts = () => {
   }, []);
   
   const getPosts = async () => {
-    const response = await fetch(`https://jsonplaceholder.typicode.com?_page=${5}&_limit=${10}`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
     const data = await response.json();
     setPosts(data);
   }
@@ -36,10 +37,12 @@ const Posts = () => {
       <div>
         {posts.map((item) => {
           return (
-            <div key={item.id}>
+            <Link key={item.id} to={`posts/${item.id}`}>
+            <div>
               <h2>{item.title}</h2>
               <span>{item.body}</span>
             </div>
+            </Link>
           )
         })}
       <button onClick={createPost}>Create</button>

@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import UserLogin from "./components/UserLogin"
+import App from './navigation'
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserLogin/>
+    <App/>
   </React.StrictMode>,
   document.getElementById("root")
 );
