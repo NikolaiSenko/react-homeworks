@@ -1,0 +1,19 @@
+.wrapper{
+  text-align: center;
+}
+.time{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.btn {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+.btn-reset{
+  border-radius: 0%;
+  font-weight: 700;
+}
