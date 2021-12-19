@@ -1,0 +1,46 @@
+.wrapper{
+  text-align: center;
+}
+.total{
+  font-size: 1.7rem;
+  margin:1rem;
+  font-weight: 700;
+}
+.sauces-header{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+.sauce-list{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.sauce{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 15%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border:2px solid rgba(211, 211, 211, 0.5);
+  border-radius: 10%;
+}
+.btn{
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+.counter{
+  margin:0.5rem;
+  font-size: 1.5rem;
+}
+.btn-submit{
+  border-radius: 10%;
+  margin: 1rem;
+  background-color: lightgray;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
