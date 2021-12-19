@@ -5,7 +5,7 @@ import App from './navigation'
 import Sauces from "./components/Sauces"
 ReactDOM.render(
   <React.StrictMode>
-    <Sauces/>
+    <App/>
   </React.StrictMode>,
   document.getElementById("root")
 );
