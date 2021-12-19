@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Pagination from "./components/Pagination";
-
+import TimePicker from './components/TimePicker'
 ReactDOM.render(
   <React.StrictMode>
-    <Pagination/>
+    <TimePicker/>
   </React.StrictMode>,
   document.getElementById("root")
 );
