@@ -1,0 +1,27 @@
+*{
+  text-decoration: none;
+  color:black
+}
+.type{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.color{
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  width: 30%;
+  display: flex;
+  margin: 0 auto;
+}
+.type-btn{
+  padding: 1rem;
+  border: 2px solid black;
+}
+.color-btn{
+  padding: 1rem;
+  border: 2px solid black;
+}
