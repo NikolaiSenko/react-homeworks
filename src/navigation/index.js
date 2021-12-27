@@ -5,20 +5,20 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import UserLogin from "../components/UserLogin";
-import Posts from "../components/Posts";
-import Post from "../components/Post"
+import NavBar from "../components/NavBar";
+import Figure from "../components/Figure";
 
-export default function App() {
+export default function Navigator() {
   return (
     <Router>
       <div>
         <Switch>
-        <Route path="/posts/:postId">
-          <Post/>
+        <Route path='/figure/:type/:color'>
+            <NavBar/>
+            <Figure/>
           </Route>
-          <Route path="/posts">
-          <Posts />
+          <Route path='/'>
+            <NavBar/>
           </Route>
         </Switch>
       </div>
