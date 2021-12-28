@@ -1,4 +1,17 @@
 .ingredient{
     display: flex;
     gap: 5px;
+    justify-content: center;
+}
+.choosed {
+    font-weight: 700;
+}
+.list-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 40px;
+    margin: 20px 0;
+    font-weight: 600;
+    cursor: pointer;
 }
