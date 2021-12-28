@@ -10,32 +10,43 @@ const INGREDIENTS = [
   "Опята",
   "Ветчина",
 ];
-const Constructor = ({onChangeOrder}) => {
-  const [visible,setVisible] = useState(false)
+const Constructor = ({ onChangeOrder, disabled }) => {
+  const [visible, setVisible] = useState(false);
   const [prove, setProve] = useState(INGREDIENTS.map(() => false));
   useEffect(() => {
-    const order = INGREDIENTS.filter((el,i) => prove[i])
-    onChangeOrder(order)
-  },[prove])
+    const order = INGREDIENTS.filter((el, i) => prove[i]);
+    onChangeOrder(order);
+  }, [prove]);
 
   const onIngredient = (position) => {
     setProve(prove.map((el, i) => (i === position ? !el : el)));
   };
   const onList = () => {
-    setVisible(!visible)
-  }
+    setVisible(!visible);
+  };
 
   return (
-    <div className="list">
-      <button className="list-btn" onClick={onList}>Ингридиенты {visible ? '⬆️':'⬇️' }</button>
-      {visible && INGREDIENTS.map((ing, index) => {
-    return (
-      <div className="ingredient" key={ing} onClick={() => onIngredient(index)}>
-        <span>{prove[index] ? "✔️" : "❌"}</span>
-        <p className={prove[index] ? "choosed" : ""}>{ing}</p>
+    <div className="wrapper">
+      <button className="list-btn" onClick={onList}>
+        Ингридиенты {visible ? "⬆️" : "⬇️"}
+      </button>
+      <div className="list">
+        {visible &&
+          INGREDIENTS.map((ing, index) => {
+            return (
+              <div
+                className="ingredient"
+                key={ing}
+                onClick={() => onIngredient(index)}
+              >
+                <button className={prove[index] ? "btn choosed" : "btn"} disabled={!prove[index] && disabled} >
+                  <span>{prove[index] ? "✔️" : "❌"}</span>
+                  {ing}
+                </button>
+              </div>
+            );
+          })}
       </div>
-    );  
-  })}
     </div>
   );
 };

@@ -1,0 +1,29 @@
+.overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  z-index: 10;
+  transition: all 0.5s ease 0s;
+}
+.caution-body{
+  position: relative;
+  width: 25rem;
+  height: 7rem;
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 5rem auto;
+  opacity:1;
+  z-index: 10;
+  transition: all 0.5s ease 0s;
+}
+.btn-close{
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 30px;
+  cursor: pointer;
+}
