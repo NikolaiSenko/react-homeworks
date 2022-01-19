@@ -7,7 +7,7 @@ const ConstructorMenu = () => {
   const [total, setTotal] = useState([]);
   const [disabled, setDisabled] = useState(false);
   useEffect(() => {
-    if (total.length === 5) {
+    if (total.length > 4) {
       setCaution(true);
       setDisabled(true)
     } else {

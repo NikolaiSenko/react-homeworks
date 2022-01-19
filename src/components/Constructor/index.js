@@ -28,7 +28,7 @@ const Constructor = ({ onChangeOrder, disabled }) => {
   return (
     <div className="wrapper">
       <button className="list-btn" onClick={onList}>
-        Ингридиенты {visible ? "⬆️" : "⬇️"}
+        Ингредиенты {visible ? "⬆️" : "⬇️"}
       </button>
       <div className="list">
         {visible &&
