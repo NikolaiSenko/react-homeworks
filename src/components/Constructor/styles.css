@@ -1,0 +1,32 @@
+.ingredient {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.choosed {
+  font-weight: 700;
+}
+.choosed span{
+  font-weight: 400;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 40px;
+  margin: 20px 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn {
+  padding: 1rem;
+  background-color: white;
+  outline: none;
+  border: 1px solid black;
+}

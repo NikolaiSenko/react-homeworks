@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Navigator from './navigation'
-import Sauces from "./components/Sauces"
+import ConstructorMenu from "./components/ConstructorMenu"
 ReactDOM.render(
   <React.StrictMode>
-    <Navigator/>
+    <ConstructorMenu/>
   </React.StrictMode>,
   document.getElementById("root")
 );
